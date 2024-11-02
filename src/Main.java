@@ -78,16 +78,17 @@ public class Main {
 
         System.out.println("Задача 7");
 
-        int friday = 7;
-        for ( int dayNumber = 1; dayNumber <= 31; dayNumber++ ){
-            if (dayNumber % 7 == 0){
-                System.out.println("Сегодня пятница, " + dayNumber + "-е число. Необходимо подготовить отчет");
-            }
+        int friday = 3;
+        for (; friday <= 31; friday = friday + 7 ){
+                System.out.println("Сегодня пятница, " + friday + "-е число. Необходимо подготовить отчет");
         }
 
         System.out.println("Задача 8");
 
-        for (int year1 = 1820; year1 > 1800 && year1 < 2100; year1++){
+        int currentYear = 2024;
+        int earOfStart = 1824;
+        int graduationYear = 2124;
+        for (int year1 = 1825; year1 > earOfStart && year1 < graduationYear; year1++){
             if (year1 % 79 == 0){
                 System.out.println(year1);
             }
